@@ -1,12 +1,12 @@
-# A project with project_browser in dev branch.
+# A project with starshot enablers ready to dev.
 
 Notes
 * I tend to disable settings management with DDEV. The *.settings.php should "just work". 
 
 ## Drupaul
 
-The config/sync basically includes enabled project browser and setting
-its settings, the rest is just a standard profile install. I export
+The config/sync basically includes enabled project_browser, automatic_updates
+and some setting. The rest is just a standard profile install. I export
 the snapshot now and then.
 
 ```

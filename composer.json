@@ -19,7 +19,8 @@
         "drupal/default_content": "^2.0@alpha",
         "drupal/devel": "^5.0",
         "drupal/project_browser": "dev-1.0.x",
-        "drush/drush": "^12.5"
+        "drush/drush": "^12.5",
+        "php-tuf/composer-stager": "^2@beta"
     },
     "require-dev": {
         "drupal/coder": "^8.3",
