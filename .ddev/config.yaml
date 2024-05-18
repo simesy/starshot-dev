@@ -12,5 +12,6 @@ database:
 use_dns_when_possible: true
 composer_version: "2"
 disable_settings_management: true
-web_environment: []
-corepack_enable: false
+corepack_enable: true
+web_environment:
+- DRUSH_OPTIONS_URI=https://starshot-dev.ddev.site
