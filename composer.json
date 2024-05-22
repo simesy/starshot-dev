@@ -20,7 +20,8 @@
         "drupal/devel": "^5.0",
         "drupal/project_browser": "dev-1.0.x",
         "drush/drush": "^12.5",
-        "php-tuf/composer-stager": "^2@beta"
+        "php-tuf/composer-stager": "^2@beta",
+        "weitzman/drupal-test-traits": "^2.3"
     },
     "require-dev": {
         "drupal/coder": "^8.3",
@@ -72,8 +73,6 @@
                 "[web-root]/sites/development.services.yml": false,
                 "[web-root]/sites/example.settings.local.php": false,
                 "[web-root]/sites/example.sites.php": false,
-                "[web-root]/sites/default/default.services.yml": false,
-                "[web-root]/sites/default/default.settings.php": false,
                 "[web-root]/modules/README.txt": false,
                 "[web-root]/profiles/README.txt": false,
                 "[web-root]/themes/README.txt": false
