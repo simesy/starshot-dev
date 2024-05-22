@@ -47,8 +47,7 @@ $settings['cache']['bins']['discovery'] = 'cache.backend.null';
 $settings['cache']['bins']['container'] = 'cache.backend.null';
 $settings['cache']['bins']['bootstrap'] = 'cache.backend.null';
 
-// error_reporting(E_ALL);
-error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+error_reporting(E_ALL);
 ini_set('display_errors', TRUE);
 ini_set('display_startup_errors', TRUE);
 
