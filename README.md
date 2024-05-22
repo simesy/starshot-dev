@@ -1,4 +1,8 @@
-# A project with starshot enablers ready to dev.
+# A Starshot/Project Browser setup
+
+A project that can be used to develop Starshot stuff including
+Project Browser. Should allow you to install projects through
+the UI.
 
 Notes
 * I tend to disable settings management with DDEV. The *.settings.php should "just work". 
