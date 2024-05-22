@@ -25,6 +25,10 @@ ddev start
 ddev composer install
 ddev drush si minimal --existing-config -y
 ddev drush uli
+
+# If you need to run FunctionalJavascript tests.
+ddev get ddev/ddev-selenium-standalone-chrome
+ddev restart
 ```
 
 ## Svelte app
