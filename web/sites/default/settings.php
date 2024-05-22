@@ -26,11 +26,6 @@ $settings['file_public_path'] = 'sites/default/files';
 $settings['file_private_path'] = 'sites/default/files/private';
 $settings['file_temp_path'] = '/tmp';
 
-// Platform.sh. The code check is a copypasta catch-all.
-if (getenv('PLATFORM_PROJECT') == 'fw7ucnhzydcsy') {
-  include_once $app_root . '/' . $site_path . '/platformsh.settings.php';
-}
-
 // Pick your local poison. You're welcome to add others if they fit neatly into that file.
 if (getenv('LANDO') == 'ON' || getenv('IS_DDEV_PROJECT') == 'true') {
   include_once $app_root . '/' . $site_path . '/docker.settings.php';
