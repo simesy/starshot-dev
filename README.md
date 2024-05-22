@@ -14,7 +14,7 @@ git clone git@github.com:simesy/starshot-dev.git
 cd starshot-dev
 ddev start
 ddev composer install
-ddev drush cim -y
+ddev drush si minimal --existing-config -y
 ddev drush uli
 ```
 
