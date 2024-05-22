@@ -1,17 +1,22 @@
-# A Starshot/Project Browser setup
+# A Starshot flavoured Project Browser setup
 
 A project that can be used to develop Starshot stuff including
 Project Browser. Should allow you to install projects through
 the UI.
 
-Notes
-* I tend to disable settings management with DDEV. The *.settings.php should "just work". 
+## Notes
 
-## Drupaul
+* This is not Starshot.
+* I disable DDEV "settings management" but it should still "just work".
+* If you want to override any settings use `web/sites/default/local.settings.php`.
+* Project browser and friends are installed in `web/modules/contrib`, so ...
+* Be aware that a composer update/install *may* wipe any dev work you are doing there.
 
-The config/sync basically includes enabled project_browser, automatic_updates
-and some setting. The rest is just a standard profile install. I export
-the snapshot now and then.
+## The Drupal build
+
+The `config/sync` directory has all the config to install project_browser and package_manager
+on top of the Drupal standard profile. Insalling projects directly through the browser works
+for me (it will update your composer.json and add the module).
 
 ```
 git clone git@github.com:simesy/starshot-dev.git 
@@ -22,9 +27,10 @@ ddev drush si minimal --existing-config -y
 ddev drush uli
 ```
 
-## App
+## Svelte app
 
-Remember to commit the results of the build.
+This is the app the runs when you visit `/admin/modules/browse`. If you modify
+the app and rebuild it, remember to commit the compiled results of the build.
 
 ```
 ddev yarn --cwd ./web/modules/contrib/project_browser/sveltejs install
