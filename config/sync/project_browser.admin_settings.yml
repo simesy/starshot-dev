@@ -3,5 +3,5 @@ _core:
 enabled_sources:
   - drupal_core
   - drupalorg_mockapi
-allow_ui_install: false
+allow_ui_install: true
 disable_add_new_module: true

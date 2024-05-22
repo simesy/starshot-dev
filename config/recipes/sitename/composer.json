@@ -1,0 +1,5 @@
+{
+    "name": "simesy/sitename",
+    "minimum-stability": "dev",
+    "type": "drupal-recipe"
+}

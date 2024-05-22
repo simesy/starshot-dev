@@ -1,0 +1,8 @@
+name: Local test
+description: 'Change the site name'
+type: Site
+config:
+  actions:
+    system.site:
+      simple_config_update:
+        name: 'Moonshine'
