@@ -1,4 +1,4 @@
-# A Starshot flavoured Project Browser setup
+# A Starshot flavoured Project Browser (etc) setup for local development
 
 A project that can be used to develop Starshot stuff including
 Project Browser. Should allow you to install projects through
@@ -9,7 +9,7 @@ the UI.
 * This is not Starshot.
 * I disable DDEV "settings management" but it should still "just work".
 * If you want to override any settings use `web/sites/default/local.settings.php`.
-* Project browser and friends are installed in `web/modules/contrib`, so ...
+* Project browser and friends are installed in `web/modules/contrib`, so,
 * Be aware that a composer update/install *may* wipe any dev work you are doing there.
 
 ## The Drupal build
