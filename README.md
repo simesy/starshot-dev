@@ -40,3 +40,14 @@ the app and rebuild it, remember to commit the compiled results of the build.
 ddev yarn --cwd ./web/modules/contrib/project_browser/sveltejs install
 ddev yarn --cwd ./web/modules/contrib/project_browser/sveltejs build
 ```
+
+## Performance
+
+Uses the [tyler36/ddev-xhgui]https://github.com/tyler36/ddev-xhgui) plugin.
+
+```
+# Enable profiling.
+ddev xhprof
+```
+
+Run some pages and see the results.
