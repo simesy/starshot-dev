@@ -48,6 +48,7 @@ Uses the [tyler36/ddev-xhgui]https://github.com/tyler36/ddev-xhgui) plugin.
 ```
 # Enable profiling.
 ddev xhprof
+ddev st # Shows you the XHProf dashboard URL.
 ```
 
-Run some pages and see the results.
+Run some pages and see the results on the dashboard.
