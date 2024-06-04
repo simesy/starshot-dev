@@ -1,0 +1,17 @@
+name: xhgui
+repository: tyler36/ddev-xhgui
+version: "2.0"
+install_date: "2024-06-04T11:57:17+10:00"
+project_files:
+    - docker-compose.xhgui.yaml
+    - config.xhgui.yaml
+    - commands/host/xhgui
+    - xhgui/Dockerfile
+    - xhgui/xhgui.config.php
+    - xhgui/collector/xhgui.collector.config.php
+    - xhgui/collector/xhgui.collector.php
+    - xhgui/nginx.conf
+global_files: []
+removal_actions:
+    - if [[ "$DDEV_DATABASE_FAMILY" == "postgres" ]]; then ddev psql -U db -c "drop database xhgui"; fi
+    - if [[ "$DDEV_DATABASE_FAMILY" != "postgres" ]]; then ddev mysql -uroot -proot -e "DROP DATABASE IF EXISTS xhgui"; fi

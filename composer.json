@@ -27,6 +27,7 @@
         "drupal/coder": "^8.3",
         "drupal/core-dev": "^10.1",
         "mglaman/phpstan-drupal": "^1.2",
+        "perftools/php-profiler": "^1.1",
         "phpstan/extension-installer": "^1.3",
         "phpstan/phpstan": "^1.10",
         "phpstan/phpstan-deprecation-rules": "^1.1",
