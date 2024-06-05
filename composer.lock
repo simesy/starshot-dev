@@ -2035,7 +2035,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/project_browser.git",
-                "reference": "3a19915f18d0b5268dee955cad9594118dce82e9"
+                "reference": "768311898cd39fee89cb4522227df4fb9544897a"
             },
             "require": {
                 "composer/semver": "^3.2",
@@ -2057,8 +2057,8 @@
                     "dev-1.0.x": "1.0.x-dev"
                 },
                 "drupal": {
-                    "version": "1.0.0-beta5+61-dev",
-                    "datestamp": "1717183474",
+                    "version": "1.0.0-beta5+63-dev",
+                    "datestamp": "1717554124",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
