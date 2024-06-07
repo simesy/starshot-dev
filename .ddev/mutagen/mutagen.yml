@@ -1,0 +1,19 @@
+
+sync:
+  defaults:
+    mode: "two-way-resolved"
+    stageMode: "neighboring"
+    watch:
+      pollingInterval: 1
+    ignore:
+      paths:
+        - "/.git"
+        - "/.tarballs"
+        - "/.ddev/db_snapshots"
+        - "/.ddev/.importdb*"
+        - ".DS_Store"
+        - ".idea"
+        - "/web/sites/default/files"
+    symlink:
+      mode: "posix-raw"
+
