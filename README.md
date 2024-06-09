@@ -41,6 +41,14 @@ ddev yarn --cwd ./web/modules/contrib/project_browser/sveltejs install
 ddev yarn --cwd ./web/modules/contrib/project_browser/sveltejs build
 ```
 
+## Testing
+
+```
+# Just capturing raw commands to improve DX later.
+si@starshot-dev-web:/var/www/html/web/modules/contrib/project_browser$ ../../../../vendor/bin/phpstan analyse --memory-limit=256M .
+si@starshot-dev-web:/var/www/html$ ./vendor/bin/phpunit web/modules/contrib/project_browser/tests/src/Kernel/InstallerTest.php
+```
+
 ## Performance
 
 Uses the [tyler36/ddev-xhgui]https://github.com/tyler36/ddev-xhgui) plugin.
