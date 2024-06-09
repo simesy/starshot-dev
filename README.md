@@ -43,10 +43,22 @@ ddev yarn --cwd ./web/modules/contrib/project_browser/sveltejs build
 
 ## Testing
 
+### Linting
+
 ```
-# Just capturing raw commands to improve DX later.
-si@starshot-dev-web:/var/www/html/web/modules/contrib/project_browser$ ../../../../vendor/bin/phpstan analyse --memory-limit=256M .
-si@starshot-dev-web:/var/www/html$ ./vendor/bin/phpunit web/modules/contrib/project_browser/tests/src/Kernel/InstallerTest.php
+# @todo, don't use the root directly config.
+ddev composer run-script phpcs web/modules/contrib/project_browser
+ddev composer run-script phpstan web/modules/contrib/project_browser 
+```
+
+### PHPUnit
+
+```
+# All tests.
+ddev composer run-script phpunit web/modules/contrib/project_browser
+
+# You can target a specific test file.
+ddev composer run-script phpunit web/modules/contrib/project_browser/tests/src/FunctionalJavascript/ProjectBrowserUiTestJsonApi.php
 ```
 
 ## Performance

@@ -55,7 +55,7 @@
         "phpstan": "vendor/bin/phpstan analyse --memory-limit=256M",
         "phpcs": "vendor/bin/phpcs --standard=phpcs.xml",
         "phpcbf": "vendor/bin/phpcbf --standard=phpcs.xml",
-        "phpunit": "vendor/bin/phpunit"
+        "phpunit": "vendor/bin/phpunit -v"
     },
     "extra": {
         "drupal-scaffold": {
