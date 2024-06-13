@@ -21,7 +21,7 @@
     <env name="BROWSERTEST_OUTPUT_BASE_URL" value=""/>
     <env name="MINK_DRIVER_CLASS" value=""/>
     <env name="MINK_DRIVER_ARGS" value=""/>
-    <env name="MINK_DRIVER_ARGS_WEBDRIVER" value=""/>
+    <env name="MINK_DRIVER_ARGS_WEBDRIVER" value="http://172.23.0.3:4444/wd/hub"/>
   </php>
   <listeners>
     <listener class="\Drupal\Tests\Listeners\DrupalListener">

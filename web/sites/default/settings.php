@@ -22,6 +22,7 @@ $settings['file_public_path'] = 'sites/default/files';
 $settings['file_private_path'] = 'sites/default/files/private';
 $settings['file_temp_path'] = '/tmp';
 $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/services.yml';
+$settings['extension_discovery_scan_tests'] = TRUE;
 
 // This setup in just DDEV.
 $databases['default']['default'] = [
