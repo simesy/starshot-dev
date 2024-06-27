@@ -9,6 +9,9 @@ But you're welcome to read, use, learn, etc. The goal of putting
 something like this up is for learning (and helping me remember how to 
 do things between context switching).
 
+If you are interested in my way of constructing project repositories just see 
+https://github.com/frees-au/ce 👀
+
 ## General Drupal settings
 
 * I disable DDEV "settings management" but it should still "just work".
@@ -91,7 +94,10 @@ cd web/modules/contrib/project_browser
 
 ### PHPUnit
 
-The root phpunit.xml matches Gitlab so you can just pass a path to to it.
+The root phpunit.xml matches Gitlab so you can just pass a path to the phpunit
+executable from the repo root.
+
+@todo add notes about novnc.
 
 ```
 # Bunch of tests.
